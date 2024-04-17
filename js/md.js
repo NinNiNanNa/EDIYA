@@ -125,46 +125,49 @@
 
                 let id = e.target.className;
                 let txt = "";
-                $.get("/json/menu.json", function (d) {
-                  // console.log(d);
-                  // console.log(d.md[1].idx);
-                  // console.log(d.md.length);
+                $.get(
+                  "https://ninninanna.github.io/EDIYA/json/menu.json",
+                  function (d) {
+                    // console.log(d);
+                    // console.log(d.md[1].idx);
+                    // console.log(d.md.length);
 
-                  for (let i = 0; i < d.md.length; i++) {
-                    if (d.md[i].idx == id) {
-                      // console.log(d.md[i].krTitle);
-                      let data = d.md[i];
+                    for (let i = 0; i < d.md.length; i++) {
+                      if (d.md[i].idx == id) {
+                        // console.log(d.md[i].krTitle);
+                        let data = d.md[i];
 
-                      txt +=
-                        '<a href="javascript:void(0);" class="closeBtn">' +
-                        '<img src="./img/drinkImg/pro_detail_close.gif" alt="">' +
-                        "</a>" +
-                        '<div class="detail_con">' +
-                        "<div>" +
-                        "<h2>" +
-                        data.krTitle +
-                        "</h2>" +
-                        "<h3>" +
-                        data.enTitle +
-                        "</h3>" +
-                        '<p class="content">' +
-                        data.content +
-                        "</p>" +
-                        "</div>" +
-                        "</div>";
+                        txt +=
+                          '<a href="javascript:void(0);" class="closeBtn">' +
+                          '<img src="./img/drinkImg/pro_detail_close.gif" alt="">' +
+                          "</a>" +
+                          '<div class="detail_con">' +
+                          "<div>" +
+                          "<h2>" +
+                          data.krTitle +
+                          "</h2>" +
+                          "<h3>" +
+                          data.enTitle +
+                          "</h3>" +
+                          '<p class="content">' +
+                          data.content +
+                          "</p>" +
+                          "</div>" +
+                          "</div>";
+                      }
                     }
-                  }
-                  $("#section2 .menuDetail_wrap").html(txt);
-                  $("#section2 .menuDetail_wrap").addClass("addMenuShow");
+                    $("#section2 .menuDetail_wrap").html(txt);
+                    $("#section2 .menuDetail_wrap").addClass("addMenuShow");
 
-                  $("#section2 .closeBtn").on({
-                    click: function () {
-                      $("#section2 .menuDetail_wrap").removeClass(
-                        "addMenuShow"
-                      );
-                    },
-                  });
-                });
+                    $("#section2 .closeBtn").on({
+                      click: function () {
+                        $("#section2 .menuDetail_wrap").removeClass(
+                          "addMenuShow"
+                        );
+                      },
+                    });
+                  }
+                );
               },
             });
           });
@@ -251,86 +254,89 @@
 
           $(".moreBtn").on({
             click: function () {
-              $.get("/json/menu.json", function (d) {
-                // console.log(d.md);
-                let data = d.md;
-                dataCount = data.length;
-                // console.log(dataCount);
+              $.get(
+                "https://ninninanna.github.io/EDIYA/json/menu.json",
+                function (d) {
+                  // console.log(d.md);
+                  let data = d.md;
+                  dataCount = data.length;
+                  // console.log(dataCount);
 
-                let str = "";
-                for (let i = currentCount; i < currentCount + count; i++) {
-                  // console.log(data[i]);
+                  let str = "";
+                  for (let i = currentCount; i < currentCount + count; i++) {
+                    // console.log(data[i]);
 
-                  // 최대 갯수일 때는 멈추게
-                  if (i === dataCount) {
-                    $(".moreBtn").css({ display: "none" });
-                    break;
+                    // 최대 갯수일 때는 멈추게
+                    if (i === dataCount) {
+                      $(".moreBtn").css({ display: "none" });
+                      break;
+                    }
+                    str +=
+                      "<li>" +
+                      "<div>" +
+                      '<div class="menuList">' +
+                      '<a class="menu_img" href="javascript:void(0);">' +
+                      '<img src="./img/mdImg/' +
+                      data[i].img +
+                      '" alt="' +
+                      data[i].krTitle +
+                      '">' +
+                      "</a>" +
+                      '<div class="menu_content">' +
+                      '<a href="javascript:void(0);" class="menuTitle">' +
+                      data[i].krTitle +
+                      "</a>" +
+                      '<a href="#" class="giftBtn">선물하기</a>' +
+                      "</div>" +
+                      "</div>" +
+                      '<div class="menuDetail">' +
+                      '<a href="javascript:void(0);" class="closeBtn">' +
+                      '<img src="./img/drinkImg/pro_detail_close.gif" alt="">' +
+                      "</a>" +
+                      '<div class="detail_con">' +
+                      "<div>" +
+                      "<h2>" +
+                      data[i].krTitle +
+                      "</h2>" +
+                      "<h3>" +
+                      data[i].enTitle +
+                      "</h3>" +
+                      '<p class="content">' +
+                      data[i].content +
+                      "</p>" +
+                      "</div>" +
+                      "</div>" +
+                      "</div>" +
+                      "</div>" +
+                      "</li>";
                   }
-                  str +=
-                    "<li>" +
-                    "<div>" +
-                    '<div class="menuList">' +
-                    '<a class="menu_img" href="javascript:void(0);">' +
-                    '<img src="./img/mdImg/' +
-                    data[i].img +
-                    '" alt="' +
-                    data[i].krTitle +
-                    '">' +
-                    "</a>" +
-                    '<div class="menu_content">' +
-                    '<a href="javascript:void(0);" class="menuTitle">' +
-                    data[i].krTitle +
-                    "</a>" +
-                    '<a href="#" class="giftBtn">선물하기</a>' +
-                    "</div>" +
-                    "</div>" +
-                    '<div class="menuDetail">' +
-                    '<a href="javascript:void(0);" class="closeBtn">' +
-                    '<img src="./img/drinkImg/pro_detail_close.gif" alt="">' +
-                    "</a>" +
-                    '<div class="detail_con">' +
-                    "<div>" +
-                    "<h2>" +
-                    data[i].krTitle +
-                    "</h2>" +
-                    "<h3>" +
-                    data[i].enTitle +
-                    "</h3>" +
-                    '<p class="content">' +
-                    data[i].content +
-                    "</p>" +
-                    "</div>" +
-                    "</div>" +
-                    "</div>" +
-                    "</div>" +
-                    "</li>";
+                  currentCount = currentCount + count;
+                  $("#section4 .menuList_wrap > ul").append(str);
+
+                  // 각 메뉴이미지 클릭시 상세성분 박스 보이기
+                  $("#section4 .menu_img").each(function (idx) {
+                    $(this).on({
+                      click: function () {
+                        // console.log(idx);
+                        $("#section4 .menuDetail")
+                          .eq(idx)
+                          .css({ display: "block" });
+                      },
+                    });
+                  });
+
+                  // 상세성분 박스안에 'X'버튼 클릭시 상세성분 박스 닫기
+                  $("#section4 .closeBtn").each(function (idx) {
+                    $(this).on({
+                      click: function () {
+                        $("#section4 .menuDetail")
+                          .eq(idx)
+                          .css({ display: "none" });
+                      },
+                    });
+                  });
                 }
-                currentCount = currentCount + count;
-                $("#section4 .menuList_wrap > ul").append(str);
-
-                // 각 메뉴이미지 클릭시 상세성분 박스 보이기
-                $("#section4 .menu_img").each(function (idx) {
-                  $(this).on({
-                    click: function () {
-                      // console.log(idx);
-                      $("#section4 .menuDetail")
-                        .eq(idx)
-                        .css({ display: "block" });
-                    },
-                  });
-                });
-
-                // 상세성분 박스안에 'X'버튼 클릭시 상세성분 박스 닫기
-                $("#section4 .closeBtn").each(function (idx) {
-                  $(this).on({
-                    click: function () {
-                      $("#section4 .menuDetail")
-                        .eq(idx)
-                        .css({ display: "none" });
-                    },
-                  });
-                });
-              });
+              );
             },
           });
         },
