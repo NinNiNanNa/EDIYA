@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="Viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0"
+    />
+    <title>EDIYA COFFEE</title>
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="./css/menu.css" type="text/css" />
+    <link rel="stylesheet" href="./css/response.css" type="text/css" />
+
+    <!-- js라이브러리 -->
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+    <script src="./js/lib/jquery.easing.1.3.js"></script>
+    <script src="./js/lib/jquery.touchSwipe.js"></script>
+
+    <!-- 각 브라우저 CSS호환 -->
+    <script src="./js/lib/prefixfree.min.js"></script>
+
+    <!-- slick라이브러리 -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="container">
+          <div class="header_row1 clearfix">
+            <div class="aside_left">
+              <ul class="aside aside1 clearfix">
+                <li>
+                  <a href="javascript:void(0);" class="addFocus"
+                    >브랜드 사이트</a
+                  >
+                </li>
+                <li><a href="javascript:void(0);">기업 사이트</a></li>
+                <li><a href="javascript:void(0);">창업안내</a></li>
+                <li><a href="javascript:void(0);">채용안내</a></li>
+              </ul>
+            </div>
+            <div class="aside_right clearfix">
+              <ul class="aside aside2 clearfix">
+                <li><a href="./login.html">로그인</a></li>
+                <li><a href="javascript:void(0);">매장찾기</a></li>
+                <li><a href="javascript:void(0);">고객의 소리</a></li>
+                <li><a href="javascript:void(0);">이디야 스토리</a></li>
+                <li><a href="javascript:void(0);">모바일상품권 스토어</a></li>
+              </ul>
+              <ul class="sns_wrap">
+                <li>
+                  <a href="javascript:void(0);"
+                    ><img src="./img/top_sns01.png" alt="blog"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><img src="./img/top_sns02.png" alt="instagram"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><img src="./img/top_sns03.png" alt="facebook"
+                  /></a>
+                </li>
+                <li>
+                  <a href="javascript:void(0);"
+                    ><img src="./img/top_sns04.png" alt="youtube"
+                  /></a>
+                </li>
+              </ul>
+              <div class="seach_wrap">
+                <input
+                  type="text"
+                  name="headerSearch"
+                  value=""
+                  class="searchBox"
+                />
+                <a href="javascript:void(0);"
+                  ><img src="./img/icon_search.gif" alt="searchBtn"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="header_row2">
+            <div class="logo_wrap">
+              <a href="./index.html"
+                ><img src="./img/top_logo.gif" alt="logo"
+              /></a>
+            </div>
+            <div class="subBg"></div>
+            <nav>
+              <ul>
+                <li>
+                  <a href="#" class="mainBtn" title="원두"
+                    ><span>원두<i></i></span
+                  ></a>
+                  <div class="sub sub0">
+                    <div class="sub_wrap">
+                      <ul>
+                        <li><a href="#">이디야 블렌드</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="mainBtn" title="메뉴"
+                    ><span>메뉴<i></i></span
+                  ></a>
+                  <div class="sub sub1">
+                    <div class="sub_wrap">
+                      <ul>
+                        <li><a href="./drink.html">음료</a></li>
+                        <li><a href="./bakery.html">푸드</a></li>
+                        <li><a href="./md.html">MD</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="mainBtn" title="유통제품"
+                    ><span>유통제품<i></i></span
+                  ></a>
+                  <div class="sub sub2">
+                    <div class="sub_wrap">
+                      <ul>
+                        <li><a href="#">스틱커피(비니스트)</a></li>
+                        <li><a href="#">커피믹스</a></li>
+                        <li><a href="#">캡슐커피</a></li>
+                        <li><a href="#">컵커피</a></li>
+                        <li><a href="#">수출입거래</a></li>
+                        <li><a href="#">B2B/특판/대리점 거래</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="mainBtn" title="이디야멤버스"
+                    ><span>이디야멤버스<i></i></span
+                  ></a>
+                  <div class="sub sub3">
+                    <div class="sub_wrap">
+                      <ul>
+                        <li><a href="#">멤버십안내</a></li>
+                        <li><a href="#">서비스안내</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="mainBtn" title="상품권·제휴카드"
+                    ><span>상품권·제휴카드<i></i></span
+                  ></a>
+                  <div class="sub sub4">
+                    <div class="sub_wrap">
+                      <ul>
+                        <li><a href="#">제휴카드(하나·신한)</a></li>
+                        <li><a href="#">기프트카드</a></li>
+                        <li><a href="#">모바일상품권</a></li>
+                        <li><a href="#">단체·기업 구매</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="mainBtn" title="브랜드 소식"
+                    ><span>브랜드 소식<i></i></span
+                  ></a>
+                  <div class="sub sub5">
+                    <div class="sub_wrap">
+                      <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트 안내</a></li>
+                        <li><a href="#">사회공헌 활동</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="mainBtn" title="고객 지원"
+                    ><span>고객 지원<i></i></span
+                  ></a>
+                  <div class="sub sub6">
+                    <div class="sub_wrap">
+                      <ul>
+                        <li><a href="#">고객의 소리</a></li>
+                        <li><a href="#">소비자중심경영(CCM)</a></li>
+                        <li><a href="#">제휴·제안</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <section id="section1_drink">
+          <div class="container">
+            <div class="title_wrap">
+              <h1>음료</h1>
+              <h2>ALWAYS BESIDE YOU, <em>EDIYA COFFEE</em></h2>
+            </div>
+
+            <div class="menu_wrap">
+              <ul class="clearfix">
+                <li><a href="./drink.html" class="addMenuBtn">음료</a></li>
+                <li><a href="./bakery.html">푸드</a></li>
+                <li><a href="./md.html">MD</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="section2">
+          <div class="wrap">
+            <div class="gap">
+              <div class="container">
+                <div class="depthMenu_wrap">
+                  <span>HOME</span>
+                  <span>메뉴</span>
+                  <span>음료</span>
+                </div>
+
+                <div class="mdTitle_wrap">
+                  <h3>추천상품</h3>
+                </div>
+
+                <div class="slide_container">
+                  <div class="slide_wrap">
+                    <!-- 슬라이드 AJAX 정보 바인딩 -->
+                  </div>
+
+                  <div class="menuDetail_wrap">
+                    <!-- <a href="javascript:void(0);" class="closeBtn">
+                                    <img src="./img/drinkImg/pro_detail_close.gif" alt="">
+                                </a>
+                                <div class="detail_con">
+                                    <div>
+                                        <h2>블루문 에이드</h2>
+                                        <h3>Blue Moon Ade</h3>
+                                        <p class="content">
+                                            달콤한 청포도와 상큼한 사과향이 어우러진 청량감 있는 맛이 특징,
+                                            푸른빛 컬러와 바닷속을 연상시키는 스프링클 토핑이 더해져 눈과 입이
+                                            즐거운 이디야 시그니처 에이드
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="detail_comp">
+                                    <div>
+                                        <ul class="clearfix">
+                                            <li><span>칼로리(<i>212kcal</i>)</span></li>
+                                            <li><span>당류(<i>47g</i>)</span></li>
+                                            <li><span>단백질(<i>0g</i>)</span></li>
+                                            <li><span>포화지방(<i>0.1g</i>)</span></li>
+                                            <li><span>나트륨(<i>4mg</i>)</span></li>
+                                            <li><span>카페인(<i>47mg</i>)</span></li>
+                                        </ul>
+                                        <p class="allergy">알레르기 성분 정보 : 대두</p>
+                                        <p class="ect ect1">※ 고카페인 함유</p>
+                                        <p class="ect ect2">※ 어린이, 임산부, 카페인 민감자는 섭취에 주의해주시기 바랍니다.</p>
+                                    </div>
+                                </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="section3">
+          <div class="wrap">
+            <div class="gap">
+              <div class="container">
+                <div class="menuCheck_wrap">
+                  <div>
+                    <div class="title clearfix">
+                      <h4>메뉴 검색</h4>
+                      <div class="seach_wrap">
+                        <input
+                          type="text"
+                          name="s3Search"
+                          value=""
+                          class="searchBox"
+                        />
+                        <a href="javascript:void(0);"
+                          ><img src="./img/icon_search.gif" alt="searchBtn"
+                        /></a>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <ul class="chkList_wrap clearfix">
+                        <li>
+                          <label for="coffee">
+                            <input
+                              type="checkbox"
+                              name="drink"
+                              id="coffee"
+                            /><span>COFFEE</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label for="beverage">
+                            <input
+                              type="checkbox"
+                              name="drink"
+                              id="beverage"
+                            /><span>BEVERAGE</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label for="blendingTea">
+                            <input
+                              type="checkbox"
+                              name="drink"
+                              id="blendingTea"
+                            /><span>BLENDING TEA</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label for="flatccino">
+                            <input
+                              type="checkbox"
+                              name="drink"
+                              id="flatccino"
+                            /><span>FLATCCINO</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label for="shakeAde">
+                            <input
+                              type="checkbox"
+                              name="drink"
+                              id="shakeAde"
+                            /><span>SHAKE & ADE</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label for="iceFlakes">
+                            <input
+                              type="checkbox"
+                              name="drink"
+                              id="iceFlakes"
+                            /><span>ICE FLAKES</span>
+                          </label>
+                        </li>
+                        <li>
+                          <label for="rtd">
+                            <input type="checkbox" name="drink" id="rtd" /><span
+                              >RTD</span
+                            >
+                          </label>
+                        </li>
+                        <li>
+                          <label for="season">
+                            <input
+                              type="checkbox"
+                              name="drink"
+                              id="season"
+                            /><span>SEASON</span>
+                          </label>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="section4">
+          <div class="wrap">
+            <div class="gap">
+              <div class="container">
+                <div class="menuList_wrap">
+                  <ul class="clearfix">
+                    <!-- AJAX 정보 바인딩 -->
+                  </ul>
+                </div>
+
+                <div class="moreBtn_wrap">
+                  <a class="moreBtn" href="javascript:void(0);"
+                    >더보기<span>+</span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="footer">
+        <div class="footer_row1">
+          <div class="wrap">
+            <div class="gap">
+              <div class="container">
+                <ul class="footer_util">
+                  <li><a href="#">영상정보처리기기 운영·관리방침</a></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><a href="#">멤버스 이용약관</a></li>
+                  <li><a href="#">가맹 안내</a></li>
+                  <li><a href="#">Sltemap</a></li>
+                  <li><a href="#">점주의 방</a></li>
+                </ul>
+
+                <div class="language_wrap">
+                  <span class="language">
+                    <a href="javascript:void(0);" class="clearfix">
+                      <i>Korean</i>
+                      <img src="./img/language_arrow.gif" alt="languageArrow" />
+                    </a>
+                  </span>
+                  <ul class="langugeBtnBox">
+                    <li><a href="javascript:void(0);">Korean</a></li>
+                    <li><a href="javascript:void(0);">English</a></li>
+                    <li><a href="javascript:void(0);">Chinese</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_row2">
+          <div class="wrap">
+            <div class="gap">
+              <div class="container">
+                <div class="footer_logo">
+                  <img src="./img/bottom_logo.gif" alt="footerLogo" />
+                </div>
+
+                <p class="copy_info">
+                  <span
+                    >서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구
+                    논현동 221-17)</span
+                  >
+                  <span>TEL : 02-543-6467</span>
+                  <span>FAX : 02-543-7191</span><br />
+                  <span>사업자등록번호 : 107-86-16302</span>
+                  <span>통신판매업 신고 : 강남 제 002519호</span>
+                  <span>대표이사 : 문창기, 권익범</span>
+                </p>
+
+                <p class="copy">
+                  ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..
+                </p>
+
+                <img class="ccmImg" src="./img/footer_ccm.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- 이벤트 배너 -->
+      <span class="eventMenu">
+        <a href="javascript:"><img src="./img/sanrio_bn.png" alt="" /></a>
+        <a class="eventCloseBtn" href="javascript:"
+          ><img src="./img/main_event_bn_close.png" alt=""
+        /></a>
+      </span>
+
+      <!-- goTop -->
+      <div class="goTop_wrap">
+        <a href="#wrap" class="goTopBtn smoothBtn">
+          <img src="./img/new_btn_arrow02.gif" alt="" />
+        </a>
+      </div>
+
+      <script src="./js/drink.js"></script>
+    </div>
+  </body>
+</html>

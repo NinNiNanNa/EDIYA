@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="Viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0"
+    />
+    <title>로그인</title>
+
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./img/" />
+    <link rel="apple-touch-icon" href="./img/" />
+
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css" />
+    <link rel="stylesheet" href="./css/fonts.css" type="text/css" />
+    <link rel="stylesheet" href="./css/login.css" type="text/css" />
+    <link rel="stylesheet" href="./css/response.css" type="text/css" />
+
+    <!-- js라이브러리 -->
+    <script src="./js/lib/jquery-1.12.4.min.js"></script>
+    <script src="./js/lib/jquery.easing.1.3.js"></script>
+    <script src="./js/lib/jquery.touchSwipe.js"></script>
+
+    <!-- 각 브라우저 CSS호환 -->
+    <script src="./js/lib/prefixfree.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header id="header">
+        <div class="container">
+          <div class="header_row1 clearfix">
+            <div class="wrap">
+              <div class="gap">
+                <div class="container">
+                  <ul class="aside">
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./join.html">회원가입</a></li>
+                    <li><a href="#">매장찾기</a></li>
+                    <li><a href="#">APP 다운로드</a></li>
+                    <li><a href="#">이디야스토어</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header_row2">
+            <div class="wrap">
+              <div class="gap">
+                <div class="container clearfix">
+                  <a href="./index.html" class="logo_wrap">
+                    <img src="./img/loginImg/logo.svg" alt="logo" />
+                  </a>
+                  <div class="subBg"></div>
+                  <nav>
+                    <ul>
+                      <li>
+                        <a href="#" class="mainBtn mainBtn0" title="멤버십 안내"
+                          >멤버십 안내</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="mainBtn mainBtn1" title="서비스 안내"
+                          >서비스 안내</a
+                        >
+                      </li>
+                      <li>
+                        <a href="#" class="mainBtn mainBtn2" title="고객지원"
+                          >고객지원</a
+                        >
+                        <div class="sub sub0">
+                          <div class="sub_wrap">
+                            <ul>
+                              <li><a href="#">자주 하는 질문</a></li>
+                              <li><a href="./request.html">1:1 문의</a></li>
+                              <li><a href="#">공지사항</a></li>
+                              <li><a href="#">이용약관</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main id="main">
+        <section id="section">
+          <div class="wrap">
+            <div class="gap">
+              <div class="container">
+                <div class="title_wrap">
+                  <h1>로그인</h1>
+                </div>
+                <div class="content_wrap">
+                  <form action="" id="loginForm">
+                    <ul>
+                      <li>
+                        <h2>이메일 아이디</h2>
+                        <div class="inputBox inputBoxId">
+                          <input
+                            type="text"
+                            name="id"
+                            id="id"
+                            placeholder="이메일을 입력해 주세요."
+                          />
+                          <a href="javascript:void(0);" class="delBtn"
+                            ><img
+                              src="./img/loginImg/icon_close_circle.svg"
+                              alt=""
+                          /></a>
+                          <p></p>
+                        </div>
+                      </li>
+                      <li>
+                        <h2>비밀번호</h2>
+                        <div class="inputBox inputBoxPw">
+                          <input
+                            type="password"
+                            name="pw"
+                            id="pw"
+                            placeholder="비밀번호를 입력해 주세요."
+                          />
+                          <a href="javascript:void(0);" class="delBtn"
+                            ><img
+                              src="./img/loginImg/icon_close_circle.svg"
+                              alt=""
+                          /></a>
+                          <a href="javascript:void(0);" class="pwBtn"
+                            ><img src="./img/loginImg/icon_pw_hide.svg" alt=""
+                          /></a>
+                          <p></p>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="buttons loginBtn"
+                          >로그인</a
+                        >
+                        <div class="loginSearch_wrap">
+                          <a href="./idSearch.html">아이디/비밀번호 찾기</a>
+                          <span>|</span>
+                          <a href="./join.html">이메일로 회원가입</a>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="javascript:void(0);" class="buttons kakaoBtn"
+                          ><img
+                            src="./img/loginImg/icon_kakao_02.svg"
+                            alt="icon_kakao"
+                          />
+                          카카오 1초 회원가입/로그인</a
+                        >
+                        <a href="javascript:void(0);" class="buttons naverBtn"
+                          ><img
+                            src="./img/loginImg/icon_naver_02.svg"
+                            alt="icon_naver"
+                          />
+                          네이버 1초 회원가입/로그인</a
+                        >
+                      </li>
+                      <li>
+                        <p class="searchTit">가입 시 입력한 정보로</p>
+                        <div class="loginSearch_wrap">
+                          <a href="./idSearch.html">아이디 찾기</a>
+                          <span>|</span>
+                          <a href="./pwSearch.html">비밀번호 찾기</a>
+                        </div>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer id="footer">
+        <div class="wrap">
+          <div class="gap">
+            <div class="container">
+              <div class="footer_row1 clearfix">
+                <ul class="footer_util">
+                  <li><a href="#">이디야멤버스 이용약관</a></li>
+                  <li><span> | </span></li>
+                  <li><a href="#">개인정보처리방침</a></li>
+                  <li><span> | </span></li>
+                  <li><a href="#">위치기반 서비스 이용약관</a></li>
+                </ul>
+
+                <ul class="sns_wrap">
+                  <li>
+                    <a href="javascript:void(0);"
+                      ><img src="./img/loginImg/icon_insta.svg" alt="instagram"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);"
+                      ><img src="./img/loginImg/icon_ytb.svg" alt="youtube"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="javascript:void(0);"
+                      ><img src="./img/loginImg/icon_fb.svg" alt="facebook"
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="footer_row2">
+                <div class="footer_logo">
+                  <img src="./img/loginImg/footer_logo.svg" alt="footerLogo" />
+                </div>
+
+                <p class="copy_info">
+                  <span
+                    >서울특별시 강남구 논현로 636 이디야빌딩(서울특별시 강남구
+                    논현동 221-17)</span
+                  >
+                  <span>TEL : 02-543-6467</span>
+                  <span>FAX : 02-543-7191</span><br />
+                  <span>사업자등록번호 : 107-86-16302</span>
+                  <span>통신판매업 신고 : 강남 제 002519호</span>
+                  <span>대표이사 : 문창기, 권익범</span>
+                </p>
+
+                <p class="copy">
+                  ⓒ 2017 EDIYA COFFEE COMPANY. ALL RIGHTS RESERVED..
+                </p>
+
+                <img class="ccmImg" src="./img/footer_ccm.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- GoTop 버튼 -->
+      <span class="goTop">
+        <a href="#wrap" class="smoothBtn goTopBtn blind">상단으로이동</a>
+      </span>
+
+      <script src="./js/login.js"></script>
+    </div>
+  </body>
+</html>
